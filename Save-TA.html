@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SAVE-TA- Perjalanan Domestik & Internasional</title>
+  <meta name="descripvel tion" content="Solusi travel terpercaya: tiket domestik & internasional, pembuatan visa & paspor, pemesanan hotel, dan paket wisata." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --orange:#FF7A00;
+      --yellow:#FFD54F;
+      --grey:#4F4F4F;
+      --bg:#fafafa;
+      --maxw:1200px;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.65);
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;margin:0;background:linear-gradient(180deg,#fff 0%,#fbfbfb 100%);color:var(--grey);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    header{background:linear-gradient(90deg,var(--orange),var(--yellow));color:#fff;padding:18px 0;position:sticky;top:0;z-index:50;backdrop-filter:blur(6px)}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:700}
+    .brand .logo{width:46px;height:46px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--orange);font-weight:800}
+    nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
+    .cta{background:#fff;color:var(--orange);padding:10px 14px;border-radius:10px;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 480px;gap:36px;align-items:center;padding:56px 20px}
+    .hero-left{max-width:680px}
+    .eyebrow{display:inline-block;background:rgba(255,255,255,0.15);padding:6px 10px;border-radius:999px;font-weight:600}
+    h1{font-size:38px;margin:18px 0 10px;line-height:1.08;color:#222}
+    p.lead{margin:0 0 18px;color:#333;opacity:.9}
+    .hero-actions{display:flex;gap:12px}
+
+    .search-card{background:#fff;border-radius:16px;padding:14px;box-shadow:0 8px 30px rgba(50,50,93,0.06)}
+    .search-row{display:flex;gap:8px}
+    .field{flex:1;padding:12px;border:1px solid #eee;border-radius:10px}
+    .btn-primary{background:var(--orange);color:#fff;padding:12px 16px;border-radius:10px;border:none;font-weight:600;cursor:pointer}
+
+    /* Services */
+    .section{padding:56px 0}
+    .section h2{margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(50,50,93,0.04);display:flex;gap:12px;align-items:center}
+    .icon{width:58px;height:58px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .icon.orange{background:linear-gradient(180deg,var(--orange),#ff9a49);color:#fff}
+    .icon.yellow{background:linear-gradient(180deg,var(--yellow),#ffe585);color:#333}
+
+    /* About & Why */
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .feature{background:linear-gradient(180deg,#fff,var(--glass));border-radius:12px;padding:14px}
+
+    /* Contact */
+    .contact-card{background:linear-gradient(180deg,#fff,#fff);border-radius:12px;padding:20px;box-shadow:0 8px 30px rgba(50,50,93,0.06)}
+    form .row{display:flex;gap:10px}
+    input,textarea,select{width:100%;padding:12px;border-radius:8px;border:1px solid #eee}
+    textarea{min-height:120px}
+
+    footer{padding:28px 0;background:#fff;border-top:1px solid #eee}
+
+    /* Responsive */
+    @media(max-width:1000px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.search-card{margin-top:18px}}
+    @media(max-width:640px){.grid{grid-template-columns:1fr}.nav ul{display:none}.hero{padding:28px 18px}h1{font-size:28px}}
+
+    /* small animations */
+    .fade-in{opacity:0;transform:translateY(8px);animation:fadein .7s ease forwards}
+    @keyframes fadein{to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+            <img src="SAVE-TA TOUR (2).png" style="width:200%; height:100%; object-fit:cover; border-radius:10px;">
+        </div>
+        <div>
+          <div style="font-size:14px;opacity:.95">SAVE-TA TOUR</div>
+          <div style="font-size:12px;opacity:.85">Domestik • Internasional</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li><a class="cta" href="#contact">Hubungi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+<section class="hero">
+  <div class="hero-left fade-in">
+    <span class="eyebrow">Travel & Visa Service</span>
+    <h1>Solusi Travel Terbaik untuk Perjalanan Domestik & Internasional</h1>
+    <p class="lead">Kami membantu mendapatkan tiket penerbangan termurah, memproses visa dan paspor, memesan hotel, dan menyiapkan paket wisata. Layanan profesional, proses cepat, dan dukungan 24/7.</p>
+
+    <div class="hero-actions">
+      <a class="btn-primary" href="#services">Cek Layanan</a>
+      <a class="btn-primary" style="background:rgba(255,255,255,0.9);color:var(--orange)" href="#contact">Hubungi via WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- KOLUM GAMBAR DI KANAN -->
+  <div class="hero-image fade-in">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b1fb3d8ab0b50e3c9f3a9b6c7a1d9f7"
+    style="width:100%;max-width:520px;border-radius:16px;box-shadow:0 10px 40px rgba(30,30,60,0.12)">
+  </div>
+</section>
+
+    <section id="services" class="section container">
+      <h2>Layanan Kami</h2>
+      <p style="margin:6px 0 18px;color:#666">Layanan lengkap untuk kebutuhan perjalanan Anda — dari tiket hingga dokumen perjalanan dan akomodasi.</p>
+     <div class="grid">
+
+  <div class="card fade-in">
+    <div class="icon orange">✈️</div>
+    <div>
+      <div style="font-weight:700">Tiket Pesawat Domestik & Internasional</div>
+      <div style="font-size:13px;color:#666">
+        Pemesanan tiket dengan harga terbaik untuk rute dalam dan luar negeri.
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="animation-delay:.06s">
+    <div class="icon yellow">🏨</div>
+    <div>
+      <div style="font-weight:700">Reservasi Hotel</div>
+      <div style="font-size:13px;color:#666">
+        Booking hotel mulai dari budget hingga kelas premium sesuai kebutuhan Anda.
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="animation-delay:.12s">
+    <div class="icon orange">🧭</div>
+    <div>
+      <div style="font-weight:700">Paket Tour (Inbound & Outbound)</div>
+      <div style="font-size:13px;color:#666">
+        Paket wisata lengkap dalam & luar negeri dengan itinerary fleksibel.
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="animation-delay:.18s">
+    <div class="icon yellow">🎒</div>
+    <div>
+      <div style="font-weight:700">Study Tour, Outing, Rafting, Religi Tour</div>
+      <div style="font-size:13px;color:#666">
+        Layanan khusus untuk sekolah, kampus, dan komunitas dengan rencana perjalanan khusus.
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="animation-delay:.24s">
+    <div class="icon orange">🏢</div>
+    <div>
+      <div style="font-weight:700">Layanan MICE</div>
+      <div style="font-size:13px;color:#666">
+        Meeting, Incentive, Convention, Event & Exhibition dengan paket lengkap.
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="animation-delay:.30s">
+    <div class="icon yellow">🚐</div>
+    <div>
+      <div style="font-weight:700">Sewa Mobil & Bus</div>
+      <div style="font-size:13px;color:#666">
+        Rental kendaraan dari city car, Hiace, Elf hingga bus pariwisata.
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="animation-delay:.36s">
+    <div class="icon orange">🛂</div>
+    <div>
+      <div style="font-weight:700">Layanan Paspor & Visa</div>
+      <div style="font-size:13px;color:#666">
+        Pengurusan paspor baru, perpanjangan, dan bantuan pengajuan visa.
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="animation-delay:.42s">
+    <div class="icon yellow">🕋</div>
+    <div>
+      <div style="font-weight:700">Haji & Umrah</div>
+      <div style="font-size:13px;color:#666">
+        Layanan keberangkatan Umrah & Haji: dokumen, tiket, hotel, dan pendampingan lengkap.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+    </section>
+
+    <section id="about" class="section container">
+      <div class="two-col">
+        <div>
+          <h2>Tentang Kami</h2>
+          <p>PT Sapta Gamya Amanah Wisata adalah perusahaan yang bergerak di bidang layanan tour & travel profesional, dengan brand Save-TA Tour. Hadir di tengah persaingan industri perjalanan yang dinamis, Save-TA Tour berkomitmen untuk menjadi pilihan terbaik bagi pelanggan dalam merencanakan perjalanan domestik maupun internasional.
+
+Dengan pengalaman, profesionalitas, dan layanan yang berorientasi pada kenyamanan pelanggan, kami terus berinovasi untuk menyediakan berbagai kebutuhan perjalanan secara aman, terpercaya, dan berkualitas.</p>
+          <ul style="color:#555;margin-top:12px">
+            <li>Proses mudah: kami pandu langkah demi langkah</li>
+            <li>Harga transparan tanpa biaya tersembunyi</li>
+            <li>Dukungan 24/7 melalui WhatsApp</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Kenapa Memilih Kami</h3>
+          <div class="features">
+            <div class="feature"><strong>Proses Cepat</strong><div style="font-size:13px;color:#666">Penanganan dokumen dan booking secara efisien.</div></div>
+            <div class="feature"><strong>Legal & Terpercaya</strong><div style="font-size:13px;color:#666">Kerjasama dengan partner resmi dan transparan.</div></div>
+            <div class="feature"><strong>Harga Kompetitif</strong><div style="font-size:13px;color:#666">Ragam pilihan sesuai anggaran.</div></div>
+            <div class="feature"><strong>Support 24/7</strong><div style="font-size:13px;color:#666">Bantuan cepat kapan saja melalui WhatsApp.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Hubungi Kami</h2>
+      <p style="color:#666;margin-bottom:18px">Isi formulir berikut atau langsung chat WhatsApp untuk permintaan cepat. Sebutkan jenis layanan yang Anda butuhkan (tiket, visa, paspor, hotel, paket wisata).</p>
+
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:20px">
+        <div>
+          <div class="contact-card">
+            <form id="contactForm" onsubmit="submitForm(event)">
+              <div style="margin-bottom:10px"><label>Nama Lengkap</label><input id="name" required placeholder="Nama Anda"/></div>
+              <div style="margin-bottom:10px"><label>Email</label><input id="email" type="email" required placeholder="email@contoh.com"/></div>
+              <div style="margin-bottom:10px"><label>Nomor WhatsApp</label><input id="phone" required placeholder="62812xxxx"/></div>
+              <div style="margin-bottom:10px"><label>Layanan</label>
+                <select id="service">
+                  <option value="Tiket Domestik">Tiket Domestik</option>
+                  <option value="Tiket Internasional">Tiket Internasional</option>
+                  <option value="Pembuatan Visa">Pembuatan Visa</option>
+                  <option value="Pembuatan Paspor">Pembuatan Paspor</option>
+                  <option value="Booking Hotel">Booking Hotel</option>
+                  <option value="Paket Wisata">Paket Wisata</option>
+                   <option value="Haji&Umrah">Haji&Umrah</option>
+                </select>
+              </div>
+              <div style="margin-bottom:10px"><label>Pesan / Detail</label><textarea id="message" placeholder="Tuliskan tanggal rencana, jumlah penumpang, atau detail lain"></textarea></div>
+              <div style="display:flex;gap:10px;align-items:center">
+                <button class="btn-primary" type="submit">Kirim Permintaan</button>
+                <button type="button" class="btn-primary" style="background:#fff;color:var(--orange)" onclick="openWhatsAppQuick()">Chat via WhatsApp</button>
+              </div>
+            </form>
+            <div id="note" style="margin-top:12px;font-size:13px;color:#555">Catatan: Kami akan membalas melalui WhatsApp dalam waktu singkat. Untuk urgen, gunakan tombol Chat via WhatsApp.</div>
+          </div>
+        </div>
+
+        <div>
+          <div style="background:linear-gradient(180deg,#fff, #fff);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(60,60,90,.06)">
+            <h3 style="margin-top:0">Kontak Cepat</h3>
+            <p style="margin:6px 0"><strong>WhatsApp:</strong> <a href="https://wa.me/6285954648214" target="_blank">+62 859-5464-8214</a></p>
+            <p style="margin:6px 0"><strong>Email:</strong> Saveta.tourtravel@yahoo.com</p>
+            <p style="margin:6px 0"><strong>Alamat:</strong> Menara 165 lantai 14 Unit E Jl. TB Simatupang No.Kav. 1, Cilandak Timur,Pasar Minggu, Jakarta Selatan 12560</p>
+
+            <h4 style="margin-top:18px">Jam Operasional</h4>
+            <p style="margin:6px 0;color:#666">Senin - Minggu: 08.00 - 20.00 (Support 24/7 via chat)</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>Solusi Travel</strong><div style="font-size:13px;color:#666">Layanan Travel Resmi, Aman, dan Terpercaya</div>
+      </div>
+      <div style="font-size:13px;color:#666">&copy; 2025 Solusi Travel. Semua hak dilindungi.</div>
+    </div>
+  </footer>
+
+  <script>
+    function openQuickSearch(){
+      const from=document.getElementById('from').value||'Jakarta';
+      const to=document.getElementById('to').value||'Bali';
+      alert('Mencari opsi terbaik: ' + from + ' → ' + to + '\nKami akan menghubungi Anda untuk detail lebih lanjut.');
+    }
+
+    function submitForm(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const phone=document.getElementById('phone').value.trim();
+      const service=document.getElementById('service').value;
+      const message=document.getElementById('message').value.trim();
+      // Build WhatsApp message for easy transfer to agent
+      const text = encodeURIComponent(`Halo, saya ${name}. Saya butuh layanan: ${service}. Detail: ${message}. Nomor WA: ${phone}`);
+      const wa = 'https://wa.me/6285954648214?text=' + text;
+      window.open(wa, '_blank');
+    }
+
+    function openWhatsAppQuick(){
+      const wa = 'https://wa.me/6285954648214?text=' + encodeURIComponent('Hallo, saya butuh bantuan booking travel. Mohon info.');
+      window.open(wa,'_blank');
+    }
+
+    // Simple fade-in stagger
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('.fade-in').forEach((el,i)=>{el.style.animationDelay=(i*60)+'ms'})
+    })
+  </script>
+</body>
+</html>
